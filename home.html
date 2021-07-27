@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
     <title>에어비앤비</title>
   </head>
   <body>
     <header class="home-header">
-      <div class="heade-top">
+      <div class="head">
         <h1>airbnb</h1>
-        <nav>
+        <nav class="nav-page">
           <ul>
             <li>숙소</li>
             <li>체험</li>
@@ -19,14 +20,19 @@
         </nav>
         <div class="side-menu">
           <a href="#">호스트되기</a>
-          <button type="button" class="global"></button>
-          <button type="button" class="user-user"></button>
+          <button type="button" class="global">
+            <img src="./assets/localizer.png" alt="" />
+          </button>
+          <button type="button" class="user-user">
+            <img src="./assets/hanburger.png" alt="" />
+            <img src="./assets/avatar.png" alt="" />
+          </button>
         </div>
       </div>
       <form action="">
         <button type="button" class="location">
           <label for="location">위치</label>
-          <input type="text" id="location" />
+          <input type="text" id="location" placeholder="어디로 여행가세요?" />
         </button>
         <button type="button" class="checkIn">
           <strong>체크인</strong>
@@ -45,8 +51,15 @@
         </button>
       </form>
       <div class="banner">
-        <span>올림픽/패럴림픽 출전 선수와 함께하는 온라인 체험</span>
-        <a href="#">지금 둘러보기</a>
+        <span>
+          올림픽/패럴림픽 <br />
+          출전 선수와 <br />
+          함께하는 <br />
+          온라인 체험
+        </span>
+        <button type="click">
+          <a href="#">지금 둘러보기</a>
+        </button>
       </div>
     </header>
     <main class="home-main">
@@ -54,68 +67,126 @@
         <h2>가까운 여행지 둘러보기</h2>
         <ul>
           <li>
-            <strong>서울</strong>
-            <span>차로 7.5시간 거리</span>
+            <a href="#">
+              <span class="nearby-img"></span>
+              <span class="nearby-content">
+                <strong>서울</strong>
+                <span>차로 7.5시간 거리</span>
+              </span>
+            </a>
           </li>
           <li>
-            <strong>부산</strong>
-            <span>차로 5.5시간 거리</span>
+            <a href="#">
+              <span class="nearby-img"></span>
+              <span class="nearby-content">
+                <strong>부산</strong>
+                <span>차로 5.5시간 거리</span>
+              </span>
+            </a>
           </li>
           <li>
-            <strong>완주군</strong>
-            <span>차로 5시간 거리</span>
+            <a href="#">
+              <span class="nearby-img"></span>
+              <span class="nearby-content">
+                <strong>완주군</strong>
+                <span>차로 5시간 거리</span>
+              </span>
+            </a>
           </li>
           <li>
-            <strong>대구</strong>
-            <span>차로 6시간 거리</span>
+            <a href="#">
+              <span class="nearby-img"></span>
+              <span class="nearby-content">
+                <strong>대구</strong>
+                <span>차로 6시간 거리</span>
+              </span>
+            </a>
           </li>
           <li>
-            <strong>전주시</strong>
-            <span>차로 5시간 거리</span>
+            <a href="#">
+              <span class="nearby-img"></span>
+              <span class="nearby-content">
+                <strong>전주시</strong>
+                <span>차로 5시간 거리</span>
+              </span>
+            </a>
           </li>
           <li>
-            <strong>경주시</strong>
-            <span>차로 6.5시간 거리</span>
+            <a href="#">
+              <span class="nearby-img"></span>
+              <span class="nearby-content">
+                <strong>경주시</strong>
+                <span>차로 6.5시간 거리</span>
+              </span>
+            </a>
           </li>
           <li>
-            <strong>인천</strong>
-            <span>차로 7시간 거리</span>
+            <a href="#">
+              <span class="nearby-img"></span>
+              <span class="nearby-content">
+                <strong>인천</strong>
+                <span>차로 7시간 거리</span>
+              </span>
+            </a>
           </li>
           <li>
-            <strong>여수시</strong>
-            <span>차로 4시간 거리</span>
+            <a href="#">
+              <span class="nearby-img"></span>
+              <span class="nearby-content">
+                <strong>여수시</strong>
+                <span>차로 4시간 거리</span>
+              </span>
+            </a>
           </li>
         </ul>
       </div>
       <div class="flexible-search">
         <a href="#">
-          <span>어디든 상관없이 떠나고 싶을때 에어비앤비가 도와드립니다!</span>
-          <a href="#">유연한 검색</a>
+          <span>
+            어디든 상관없이 <br />
+            떠나고 싶을때 <br />
+            에어비앤비가 <br />
+            도와드립니다!
+          </span>
+          <button type="click">유연한 검색</button>
         </a>
       </div>
       <div class="live-theme">
+        <h2>어디에서나, 여행은 살아보는거야!</h2>
         <ul>
           <li>
             <a href="#">
-              <img src="" alt="" />
+              <img
+                src="https://a0.muscache.com/im/pictures/2f13349d-879d-43c6-83e3-8e5679291d53.jpg?im_w=320"
+                alt=""
+              />
               <span>자연생활을 만끽할 수 있는 숙소</span>
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="" alt="" />
+              <img
+                src="https://a0.muscache.com/im/pictures/36f53e61-db8d-403c-9122-5b761c0e4264.jpg?im_w=320"
+                alt=""
+              />
               <span>독특한 공간</span>
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="" alt="" />
+              <img
+                src="https://a0.muscache.com/im/pictures/7d82ca14-56e5-4465-8218-dcfa7d69b6ac.jpg?im_w=320"
+                alt=""
+              />
               <span>집 전체</span>
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="" alt="" />
+              <img
+                src="https://a0.muscache.com/im/pictures/10a638e1-6aff-4313-8033-1275cec83987.jpg?im_w=320"
+                alt=""
+              />
               <span>반려동물 동반 가능</span>
             </a>
           </li>
@@ -129,35 +200,86 @@
         </p>
         <ul>
           <li>
-            <a href="">
-              <img src="" alt="" />
-              <h3>추천 컬렉션 : 여행 본능을 깨우는 체험</h3>
+            <a href="#">
+              <img
+                src="https://a0.muscache.com/im/pictures/247a1ea3-946d-4eb8-a6ab-e8b9a66846f4.jpg?im_w=320"
+                alt=""
+              />
+              <strong>추천 컬렉션 : 여행 본능을 깨우는 체험</strong>
               <span>온라인 체험으로 집에서 랜선 여행을 즐기세요.</span>
             </a>
           </li>
           <li>
-            <a href="">
-              <img src="" alt="" />
-              <h3>온라인 체험</h3>
-              <span>호스트와 실시간으로 소통하면서 액티비티를 즐겨보세요.</span>
+            <a href="#">
+              <img
+                src="https://a0.muscache.com/im/pictures/a6b08861-feb8-4a01-a76d-b33d2867b441.jpg?im_w=320"
+                alt=""
+              />
+              <strong>온라인 체험</strong>
+              <span>
+                호스트와 실시간으로 소통하면서 <br />
+                액티비티를 즐겨보세요.
+              </span>
             </a>
           </li>
           <li>
-            <a href="">
-              <img src="" alt="" />
-              <h3>체험</h3>
+            <a href="#">
+              <img
+                src="https://a0.muscache.com/im/pictures/ad109d56-2421-40cd-98e6-e114160dc85b.jpg?im_w=320"
+                alt=""
+              />
+              <strong>체험</strong>
               <span>어디에서든 세계 각지의 매력을 만나실 수 있습니다.</span>
             </a>
           </li>
         </ul>
       </div>
       <div class="hosting">
-        <a href="">
-          <span>호스팅 시작하기</span>
-          숙소를 공유하여 부수입을 올리고 새로운 가능성을 만나세요.
+        <a href="#">
+          <h3>호스팅 시작하기</h3>
+          <span>
+            숙소를 공유하여 부수입을 올리고 새로운 <br />
+            가능성을 만나세요.
+          </span>
           <button type="button">자세히 알아보기</button>
         </a>
       </div>
     </main>
+    <footer>
+      <div class="footer-item-list">
+        <div>
+          <dl>
+            <dd>소개</dd>
+            <dt>에어비앤비 이용 방법</dt>
+            <dt>뉴스룸</dt>
+            <dt>에어비앤비 2021</dt>
+            <dt>투자자 정보</dt>
+            <dt>에어비앤비 플러스</dt>
+            <dt>에어비앤비 Luxe</dt>
+            <dt>호텔투나잇</dt>
+            <dt>에어비앤비 비즈니스 프로그램</dt>
+            <dt>호스트 분들이 있기에 가능합니다</dt>
+            <dt>채용정보</dt>
+            <dt>창립자 편지</dt>
+          </dl>
+        </div>
+        <div>
+          <dl>
+            <dd>커뮤니티</dd>
+            <dt>다양성 및 소속감</dt>
+            <dt>접근성</dt>
+            <dt>에어비앤비 어소시에이트</dt>
+            <dt>구호 인력을 위한 숙소</dt>
+            <dt>게스트 추천</dt>
+            <dt>Airbnb.org</dt>
+          </dl>
+        </div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="footer-info">
+        <span>&copy;2021 Airbnb, Inc</span>
+      </div>
+    </footer>
   </body>
 </html>
