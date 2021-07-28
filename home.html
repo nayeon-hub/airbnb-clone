@@ -13,9 +13,15 @@
         <h1>airbnb</h1>
         <nav class="nav-page">
           <ul>
-            <li>숙소</li>
-            <li>체험</li>
-            <li>온라인 체험</li>
+            <li>
+              <button type="button">숙소</button>
+            </li>
+            <li>
+              <button type="button">체험</button>
+            </li>
+            <li>
+              <a href="#">온라인 체험</a>
+            </li>
           </ul>
         </nav>
         <div class="side-menu">
@@ -29,26 +35,24 @@
           </button>
         </div>
       </div>
-      <form action="">
-        <button type="button" class="location">
+      <form action="" class="home-form">
+        <button type="button" class="location-btn">
           <label for="location">위치</label>
           <input type="text" id="location" placeholder="어디로 여행가세요?" />
         </button>
-        <button type="button" class="checkIn">
+        <button type="button" class="checkIn-btn">
           <strong>체크인</strong>
           <span>날짜 입력</span>
         </button>
-        <button type="button" class="checkOut">
+        <button type="button" class="checkOut-btn">
           <strong>체크아웃</strong>
           <span>날짜 입력</span>
         </button>
-        <button type="button" class="checkIn">
+        <button type="button" class="guests-btn">
           <strong>인원</strong>
           <span>게스트 추가</span>
         </button>
-        <button type="submit" aria-label="검색">
-          <!-- icon -->
-        </button>
+        <button type="submit" class="search-btn" aria-label="검색"></button>
       </form>
       <div class="banner">
         <span>
@@ -57,7 +61,7 @@
           함께하는 <br />
           온라인 체험
         </span>
-        <button type="click">
+        <button type="button">
           <a href="#">지금 둘러보기</a>
         </button>
       </div>
@@ -148,7 +152,7 @@
             에어비앤비가 <br />
             도와드립니다!
           </span>
-          <button type="click">유연한 검색</button>
+          <button type="button">유연한 검색</button>
         </a>
       </div>
       <div class="live-theme">
@@ -217,8 +221,7 @@
               />
               <strong>온라인 체험</strong>
               <span>
-                호스트와 실시간으로 소통하면서 <br />
-                액티비티를 즐겨보세요.
+                호스트와 실시간으로 소통하면서 액티비티를 즐겨보세요.
               </span>
             </a>
           </li>
@@ -249,36 +252,149 @@
       <div class="footer-item-list">
         <div>
           <dl>
-            <dd>소개</dd>
-            <dt>에어비앤비 이용 방법</dt>
-            <dt>뉴스룸</dt>
-            <dt>에어비앤비 2021</dt>
-            <dt>투자자 정보</dt>
-            <dt>에어비앤비 플러스</dt>
-            <dt>에어비앤비 Luxe</dt>
-            <dt>호텔투나잇</dt>
-            <dt>에어비앤비 비즈니스 프로그램</dt>
-            <dt>호스트 분들이 있기에 가능합니다</dt>
-            <dt>채용정보</dt>
-            <dt>창립자 편지</dt>
+            <dt>소개</dt>
+            <dd>
+              <a href="#">에어비앤비 이용 방법</a>
+            </dd>
+            <dd>
+              <a href="#">뉴스룸</a>
+            </dd>
+            <dd>
+              <a href="#">에어비앤비 2021</a>
+            </dd>
+            <dd>
+              <a href="#">투자자 정보</a>
+            </dd>
+            <dd>
+              <a href="#">에어비앤비 플러스</a>
+            </dd>
+            <dd>
+              <a href="#">에어비앤비 Luxe</a>
+            </dd>
+            <dd>
+              <a href="#">호텔투나잇</a>
+            </dd>
+            <dd>
+              <a href="#">에어비앤비 비즈니스 프로그램</a>
+            </dd>
+            <dd>
+              <a href="#">호스트 분들이 있기에 가능합니다</a>
+            </dd>
+            <dd>
+              <a href="#">채용정보</a>
+            </dd>
+            <dd>
+              <a href="#">창립자 편지</a>
+            </dd>
           </dl>
         </div>
         <div>
           <dl>
-            <dd>커뮤니티</dd>
-            <dt>다양성 및 소속감</dt>
-            <dt>접근성</dt>
-            <dt>에어비앤비 어소시에이트</dt>
-            <dt>구호 인력을 위한 숙소</dt>
-            <dt>게스트 추천</dt>
-            <dt>Airbnb.org</dt>
+            <dt>커뮤니티</dt>
+            <dd>
+              <a href="#">다양성 및 소속감</a>
+            </dd>
+            <dd>
+              <a href="#">접근성</a>
+            </dd>
+            <dd>
+              <a href="#">에어비앤비 어소시에이트</a>
+            </dd>
+            <dd>
+              <a href="#">구호 인력을 위한 숙소</a>
+            </dd>
+            <dd>
+              <a href="#">게스트 추천</a>
+            </dd>
+            <dd>
+              <a href="#">Airbnb.org</a>
+            </dd>
           </dl>
         </div>
-        <div></div>
-        <div></div>
+        <div>
+          <dl>
+            <dt>호스팅하기</dt>
+            <dd>
+              <a href="#"> 숙소 호스팅</a>
+            </dd>
+            <dd>
+              <a href="#">온라인 체험 호스팅하기</a>
+            </dd>
+            <dd>
+              <a href="#">체험 호스팅하기</a>
+            </dd>
+            <dd>
+              <a href="#">책임감 있는 호스팅</a>
+            </dd>
+            <dd>
+              <a href="#">자료 센터</a>
+            </dd>
+            <dd>
+              <a href="#">커뮤니티 센터</a>
+            </dd>
+          </dl>
+        </div>
+        <div>
+          <dl>
+            <dt>에어비앤비 지원</dt>
+            <dd>
+              <a href="#"> 에어비앤비의 코로나19 대응 방안 </a>
+            </dd>
+            <dd>
+              <a href="#"> 도움말 센터 </a>
+            </dd>
+            <dd>
+              <a href="#">예약 취소 옵션 </a>
+            </dd>
+            <dd>
+              <a href="#"> 에어비앤비 이웃 민원 지원</a>
+            </dd>
+            <dd>
+              <a href="#">신뢰와 안전</a>
+            </dd>
+          </dl>
+        </div>
       </div>
       <div class="footer-info">
-        <span>&copy;2021 Airbnb, Inc</span>
+        <div class="info-link">
+          <span>&copy; 2021 Airbnb, Inc</span>
+          <span>
+            <a href="#">개인정보 처리방침</a>
+          </span>
+          <span>
+            <a href="#">이용약관</a>
+          </span>
+          <span>
+            <a href="#">사이트맵</a>
+          </span>
+          <span>
+            <a href="#">한국의 변경된 환불 정책</a>
+          </span>
+          <span>
+            <a href="#">회사 세부정보</a>
+          </span>
+        </div>
+        <div class="change-etc">
+          <button>한국어(KR)</button>
+          <button>KRW</button>
+        </div>
+        <div class="community">
+          <a href="#">
+            <span class="facebook"></span>
+          </a>
+          <a href="#">
+            <span class="twitter"></span>
+          </a>
+          <a href="#">
+            <span class="instagram"></span>
+          </a>
+          <a href="#">
+            <span class="blog"></span>
+          </a>
+          <a href="#">
+            <span class="phost"></span>
+          </a>
+        </div>
       </div>
     </footer>
   </body>

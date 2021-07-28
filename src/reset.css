@@ -127,8 +127,17 @@ button {
   border: none;
   background: transparent;
   padding: 0;
+  cursor: pointer;
 }
 
 a {
   text-decoration: none;
+}
+
+input {
+  border: none;
+}
+
+input:focus {
+  outline: none;
 }
