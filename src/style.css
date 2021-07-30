@@ -1,6 +1,10 @@
 @import "./reset.css";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap");
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   box-sizing: border-box;
   font-family: "Noto Sans KR", sans-serif;
@@ -27,6 +31,7 @@ button {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   padding: 0px 73px;
+  position: relative;
 }
 
 .head,
@@ -135,6 +140,7 @@ button {
   margin: 0 auto;
   display: flex;
   position: relative;
+  box-shadow: 0px 16px 32px rgb(0 0 0 / 15%), 0px 3px 8px rgb(0 0 0 / 10%);
 }
 
 .home-form button {
@@ -159,6 +165,12 @@ button {
   font-weight: 300;
 }
 
+.home-form button:not(:first-child):focus {
+  background: #fff;
+  box-shadow: rgb(0 0 0 / 15%) 0px 16px 32px, rgb(0 0 0 / 10%) 0px 3px 8px;
+  pointer-events: none;
+}
+
 .home-form button:not(:first-child) {
   padding: 14px 24px;
 }
@@ -167,18 +179,11 @@ button {
   background: #ebebeb;
 }
 
-/* .home-form button:not(:last-child)::after {
-  content: "";
-  display: block;
-  width: 1px;
-  height: 30px;
-  background: #dddddd;
-} */
-
 .home-header .location-btn {
   padding-left: 30px;
   width: 270px;
   height: 65px;
+  position: relative;
 }
 
 .location-btn input {
@@ -215,6 +220,58 @@ button {
   background-position: center;
   background-size: 16px auto;
   background-repeat: no-repeat;
+}
+
+.lc-search-link {
+  width: 504px;
+  height: 163px;
+  border-radius: 32px;
+  box-shadow: 0px 6px 20px rgb(0 0 0 / 20%);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 16px 32px;
+  position: absolute;
+}
+
+.home-hidden-cont .lc-search-link span {
+  font-size: 13px;
+  line-height: 12px;
+  font-weight: 500;
+  color: #222222;
+  text-align: left;
+  margin: 22px 0px;
+}
+
+.home-hidden-cont .lc-search-link a {
+  display: inline-block;
+  height: 58px;
+  box-shadow: rgb(0 0 0 / 12%) 0px 6px 16px;
+  border: 1px solid rgb(221, 221, 221);
+  padding: 8px 24px;
+  border-radius: 32px;
+  color: #6f019c;
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 700;
+  text-align: left;
+  position: relative;
+}
+.home-hidden-cont .lc-search-link a::after {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  content: "";
+  background-image: url("../assets/chevron_right_pupple.png");
+  background-size: contain;
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.home-hidden-cont .lc-search-link a:hover {
+  box-shadow: rgb(0 0 0 / 20%) 0px 6px 20px;
 }
 
 .banner {
@@ -845,4 +902,8 @@ div[class^="tit"] h4 {
 
 .list-sixHours li:nth-child(3) .item-image-sm {
   background: url("https://a0.muscache.com/im/pictures/lombard/MtTemplate-2148958-media_library/original/393206d0-97e2-4ef7-999b-5f9c783366c4.jpeg?aki_policy=poster");
+}
+
+.hiding {
+  display: none;
 }
