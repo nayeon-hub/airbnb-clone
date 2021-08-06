@@ -4,6 +4,9 @@ const locationBtn = homeForm.querySelector(".location-btn");
 const lcInput = locationBtn.querySelector("input");
 
 const guestsBtn = homeForm.querySelector(".guests-btn");
+const guestsBox = document.querySelector(".guests-dropMenu");
+
+const cntBtns = guestsBox.querySelectorAll(".counting");
 
 const searchBtn = homeForm.querySelector(".search-btn");
 const searchSpan = searchBtn.querySelector("span");
@@ -34,6 +37,46 @@ function searchBtnStyleOut() {
   searchSpan.style.marginLeft = "";
 }
 
+function guestsCheck(ctnBtn, idx) {
+  const cntMinus = ctnBtn.querySelector(".count-minus");
+  const cntPlus = ctnBtn.querySelector(".count-plus");
+  const cntNum = ctnBtn.querySelector(".current-num");
+  let num = parseInt(cntNum.innerHTML);
+  console.log(idx);
+
+  cntMinus.addEventListener("click", () => {
+    if (idx === 0) {
+      if (num > 0 && num < 17) {
+        num -= 1;
+        cntNum.innerHTML = `${num}`;
+      }
+    } else {
+      if (num > 0 && num < 6) {
+        cntMinus.addEventListener("click", () => {
+          num -= 1;
+          cntNum.innerHTML = `${num}`;
+        });
+      }
+    }
+  });
+
+  cntPlus.addEventListener("click", () => {
+    if (idx === 0) {
+      if (num >= 0 && num < 16) {
+        num += 1;
+        cntNum.innerHTML = `${num}`;
+      }
+    } else {
+      if (num >= 0 && num < 5) {
+        cntMinus.addEventListener("click", () => {
+          num += 1;
+          cntNum.innerHTML = `${num}`;
+        });
+      }
+    }
+  });
+}
+
 // 검색 버튼
 searchBtn.addEventListener("click", (e) => {
   if (lcInput.value === "") {
@@ -48,6 +91,9 @@ searchBtn.addEventListener("click", (e) => {
 // 게스트 인원 버튼
 guestsBtn.addEventListener("focus", () => {
   searchBtnStyleIn();
+  cntBtns.forEach((ele, idx) => {
+    guestsCheck(ele, idx);
+  });
 });
 
 // 위치 버튼

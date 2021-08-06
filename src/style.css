@@ -286,8 +286,12 @@ button {
 }
 
 .guests-dropMenu {
+  position: absolute;
+  z-index: 1;
+  top: 163px;
+  right: 199px;
+  width: 374px;
   background-color: #ffffff;
-  width: 397px;
   padding: 13px 32px;
   border-radius: 32px;
 }
@@ -320,6 +324,12 @@ button {
   font-size: 14px;
 }
 
+.counting {
+  display: flex;
+  justify-content: space-between;
+  width: 104px;
+}
+
 .counting button {
   display: inline-block;
   width: 30px;
@@ -329,6 +339,10 @@ button {
   background-repeat: no-repeat;
   background-size: 18px auto;
   border: 1px solid #b0b0b0;
+}
+
+.counting button:hover {
+  border: 1px solid #222222;
 }
 
 .counting .count-minus {
@@ -344,7 +358,7 @@ button {
   margin: 0 8px;
   font-size: 18px;
   position: relative;
-  top: -6px;
+  top: 5px;
 }
 
 .global-modal-cont {
