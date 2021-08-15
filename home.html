@@ -51,6 +51,43 @@
         <button type="button" class="guests-btn">
           <strong>인원</strong>
           <span>게스트 추가</span>
+          <div class="guests-dropMenu hiding">
+            <ul>
+              <li>
+                <span class="guests-info">
+                  <strong>성인</strong>
+                  <span>만 13세 이상</span>
+                </span>
+                <span class="counting">
+                  <span class="count-minus count-btn"></span>
+                  <span class="current-num">0</span>
+                  <span class="count-plus count-btn"></span>
+                </span>
+              </li>
+              <li>
+                <span class="guests-info">
+                  <strong>어린이</strong>
+                  <span>만 2~12세</span>
+                </span>
+                <span class="counting">
+                  <span class="count-minus count-btn"></span>
+                  <span class="current-num">0</span>
+                  <span class="count-plus count-btn"></span>
+                </span>
+              </li>
+              <li>
+                <span class="guests-info">
+                  <strong>유아</strong>
+                  <span>만 2세 미만</span>
+                </span>
+                <span class="counting">
+                  <span class="count-minus count-btn"></span>
+                  <span class="current-num">0</span>
+                  <span class="count-plus count-btn"></span>
+                </span>
+              </li>
+            </ul>
+          </div>
         </button>
         <button type="submit" class="search-btn" aria-label="검색">
           <img src="./assets/search.png" alt="" />
@@ -61,43 +98,6 @@
         <div class="lc-search-link hiding">
           <span>언제 어디로든 떠나는 여행</span>
           <a href="#">유연한 검색</a>
-        </div>
-        <div class="guests-dropMenu">
-          <ul>
-            <li>
-              <span class="guests-info">
-                <strong>성인</strong>
-                <span>만 13세 이상</span>
-              </span>
-              <span class="counting">
-                <button type="button" class="count-minus"></button>
-                <span class="current-num">0</span>
-                <button type="button" class="count-plus"></button>
-              </span>
-            </li>
-            <li>
-              <span class="guests-info">
-                <strong>어린이</strong>
-                <span>만 2~12세</span>
-              </span>
-              <span class="counting">
-                <button type="button" class="count-minus"></button>
-                <span class="current-num">0</span>
-                <button type="button" class="count-plus"></button>
-              </span>
-            </li>
-            <li>
-              <span class="guests-info">
-                <strong>유아</strong>
-                <span>만 2세 미만</span>
-              </span>
-              <span class="counting">
-                <button type="button" class="count-minus"></button>
-                <span class="current-num">0</span>
-                <button type="button" class="count-plus"></button>
-              </span>
-            </li>
-          </ul>
         </div>
         <div class="global-modal-cont hiding">
           <div class="global-modal">
@@ -589,7 +589,7 @@
         </div>
       </section>
     </footer>
-    <script src="./search.js"></script>
     <script src="./modal.js"></script>
+    <script src="./search.js"></script>
   </body>
 </html>

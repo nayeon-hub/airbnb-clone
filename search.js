@@ -4,7 +4,7 @@ const locationBtn = homeForm.querySelector(".location-btn");
 const lcInput = locationBtn.querySelector("input");
 
 const guestsBtn = homeForm.querySelector(".guests-btn");
-const guestsBox = document.querySelector(".guests-dropMenu");
+const guestsBox = guestsBtn.querySelector(".guests-dropMenu");
 
 const cntBtns = guestsBox.querySelectorAll(".counting");
 
@@ -89,7 +89,15 @@ searchBtn.addEventListener("click", (e) => {
 });
 
 // 게스트 인원 버튼
-guestsBtn.addEventListener("focus", () => {
+guestsBtn.addEventListener("click", () => {
+  // if (guestsBox.classList[1] === "hiding") {
+  //   guestsBox.classList.remove("hiding");
+  // } else {
+  //   guestsBox.classList.add("hiding");
+  // }
+  console.log("hey");
+  console.log(guestsBox.classList);
+
   searchBtnStyleIn();
   cntBtns.forEach((ele, idx) => {
     guestsCheck(ele, idx);
