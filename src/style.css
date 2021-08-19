@@ -1093,7 +1093,7 @@ div[class^="tit"] h4 {
 }
 
 .item-frame dl div {
-  margin-bottom: 12px;
+  margin-bottom: 3px;
 }
 
 .row-1 {
@@ -1103,11 +1103,31 @@ div[class^="tit"] h4 {
 .row-1 dd {
   font-size: 14px;
   line-height: 18px;
-  margin-left: 2px;
 }
 
-.row-1 dd + dt::before {
+.row-1 dd span {
+  margin-left: 3px;
+}
+
+.row-1 .rating-span {
+  display: flex;
+}
+
+.row-1 .rating-span::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-image: url("../assets/stars-fill.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 3px;
+}
+
+.row-1 .rating-span::after {
   content: "·";
+  margin: 0 2px;
 }
 
 .row-2 dd {
@@ -1123,31 +1143,125 @@ div[class^="tit"] h4 {
   content: "₩";
 }
 
-.item-frame-big {
-  width: 380px;
-  height: 194px;
+.item-sixHours .row-1 {
+  margin-bottom: 5px;
+}
+
+.item-sixHours .row-2 dd {
+  margin-bottom: 14px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.item-sixHours .row-3 {
+  margin-bottom: 17px;
+}
+
+.row-4 button {
+  width: 75px;
+  height: 32px;
+  border: 1px solid #222222;
+  border-radius: 7px;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.row-4 button + button {
+  margin-left: 2px;
+}
+
+.item-sixHours {
   border-radius: 17px;
   border: 1px solid #dddddd;
 }
 
+.item-sixHours a {
+  width: 359px;
+  display: flex;
+  align-items: center;
+  padding: 12px;
+}
+
+.list-sixHours li:nth-child(1) .item-image-sm {
+  background-image: url("https://a0.muscache.com/im/pictures/lombard/MtTemplate-2732518-media_library/original/72710cd4-d143-47f8-9954-983d02e3e596.jpeg?aki_policy=poster");
+}
+
+.list-sixHours li:nth-child(2) .item-image-sm {
+  background-image: url("https://a0.muscache.com/im/pictures/lombard/MtTemplate-1694352-media_library/original/d78386fa-2210-4fe6-9fc6-c21756db3376.jpg?aki_policy=poster");
+}
+
+.list-sixHours li:nth-child(3) .item-image-sm {
+  background-image: url("https://a0.muscache.com/im/pictures/lombard/MtTemplate-2016483-media_library/original/a90f47b0-0111-416c-a8b6-1a80dc6aa6cb.jpeg?aki_policy=poster");
+}
+
 .item-image-sm {
+  display: block;
   width: 125px;
   height: 164px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
+  border-radius: 13px;
+  margin-right: 15px;
 }
 
-.list-sixHours li:nth-child(1) .item-image-sm {
-  background: url("https://a0.muscache.com/im/pictures/lombard/MtTemplate-1725164-media_library/original/0378d5eb-f498-4947-b9a6-e1ee79fc2e16.jpeg?aki_policy=poster");
+.item-sixHours a dl {
+  width: 185px;
 }
 
-.list-sixHours li:nth-child(2) .item-image-sm {
-  background: url("https://a0.muscache.com/im/pictures/lombard/MtTemplate-2630340-media_library/original/183ec15b-53f3-4f1d-a983-2cae6264e9e7.jpeg?aki_policy=poster");
+.list-newExp {
+  display: flex;
 }
 
-.list-sixHours li:nth-child(3) .item-image-sm {
-  background: url("https://a0.muscache.com/im/pictures/lombard/MtTemplate-2148958-media_library/original/393206d0-97e2-4ef7-999b-5f9c783366c4.jpeg?aki_policy=poster");
+.list-newExp li + li {
+  margin-left: 19px;
+}
+
+.item-newExp a {
+  display: block;
+  padding: 24px;
+  width: 542px;
+  height: 327px;
+  border-radius: 17px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  position: relative;
+}
+
+.item-newExp span {
+  display: inline-block;
+  font-size: 13px;
+  margin-bottom: 3px;
+}
+
+.item-newExp h5 {
+  font-size: 22px;
+  font-weight: 500;
+  width: 240px;
+  line-height: 1.2;
+}
+
+.item-newExp button {
+  background: #fff;
+  width: 94px;
+  height: 37px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  position: absolute;
+  bottom: 24px;
+}
+
+.list-newExp li:nth-child(1) a {
+  background-image: url("https://a0.muscache.com/im/pictures/c94c5ff8-5392-4c6d-932b-921542e65523.jpg?im_w=720");
+}
+.list-newExp li:nth-child(2) a {
+  background-image: url("https://a0.muscache.com/im/pictures/dd20892e-28c6-42d5-9fec-56eeb18e7d58.jpg?im_w=720");
+}
+.list-newExp li:nth-child(3) a {
+  background-image: url("https://a0.muscache.com/im/pictures/2c42c2ee-f9f5-421f-b697-7d8cd28a98e3.jpg?im_w=720");
 }
 
 .hiding {
